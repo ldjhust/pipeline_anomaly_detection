@@ -1,0 +1,13 @@
+runtime:
+  enabled: true
+  iqr_multiplier: 1.5
+
+volume:
+  enabled: true
+  iqr_multiplier: 1.5
+  min_ratio_threshold: 0.5
+
+confidence:
+  enabled: true
+  window_size: 10
+  std_threshold: 2.5
