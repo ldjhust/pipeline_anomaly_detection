@@ -128,7 +128,7 @@ class ReportGenerator:
                 f"{anomaly['metric_name']} | "
                 f"{anomaly['actual_value']:.4f} | "
                 f"{anomaly['expected_range']} | "
-                f"{anomaly['trigger_condition']} | "
+                f"{anomaly['trigger_condition'].replace('|', '\\|')} | "
                 f"{anomaly['deviation_score']:.4f} | "
                 f"{ReportGenerator._severity_badge(anomaly['severity'])} |"
             )

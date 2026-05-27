@@ -1,6 +1,6 @@
 # 🚨 Pipeline Anomaly Detection Report
 
-Generated At: `2026-05-27 14:13:11`
+Generated At: `2026-05-27 14:42:11`
 
 ## 📊 Summary
 
@@ -19,23 +19,23 @@ Generated At: `2026-05-27 14:13:11`
 
 | Severity | Count |
 |---|---:|
-| 🔴 CRITICAL | 8 |
-| 🟠 WARNING | 2 |
+| 🔴 CRITICAL | 7 |
+| 🟠 WARNING | 3 |
 
 ## 🧾 Anomaly Details
 
 | Batch ID | Type | Metric | Actual | Expected Range | Trigger Condition | Score | Severity |
 |---|---|---|---:|---|---:|---|---|
-| batch_1013 | runtime_anomaly | duration_seconds | 1680.0000 | [168.75, 298.75] | duration_seconds > 298.75 | 1511.2500 | 🔴 CRITICAL |
-| batch_1014 | runtime_anomaly | duration_seconds | 1920.0000 | [168.75, 298.75] | duration_seconds > 298.75 | 1751.2500 | 🔴 CRITICAL |
-| batch_1015 | runtime_anomaly | duration_seconds | 1590.0000 | [168.75, 298.75] | duration_seconds > 298.75 | 1421.2500 | 🔴 CRITICAL |
-| batch_1016 | volume_anomaly | output_count | 2200.0000 | [4537.5, 20837.5] | output_count < 4537.5 | 2337.5000 | 🔴 CRITICAL |
+| batch_1013 | runtime_anomaly | duration_seconds | 1680.0000 | [175.0, 295.0] | duration_seconds > 295.0 | 1505.0000 | 🔴 CRITICAL |
+| batch_1014 | runtime_anomaly | duration_seconds | 1920.0000 | [175.0, 295.0] | duration_seconds > 295.0 | 1745.0000 | 🔴 CRITICAL |
+| batch_1015 | runtime_anomaly | duration_seconds | 1590.0000 | [175.0, 295.0] | duration_seconds > 295.0 | 1415.0000 | 🔴 CRITICAL |
+| batch_1016 | volume_anomaly | output_count | 2200.0000 | [4000.0, 21200.0] | output_count < 4000.0 | 1800.0000 | 🟠 WARNING |
 | batch_1016 | volume_anomaly | output_ratio | 0.1467 | [0.5, +inf] | output_ratio < 0.5 | 0.3533 | 🔴 CRITICAL |
-| batch_1017 | volume_anomaly | output_count | 1800.0000 | [4537.5, 20837.5] | output_count < 4537.5 | 2737.5000 | 🔴 CRITICAL |
+| batch_1017 | volume_anomaly | output_count | 1800.0000 | [4000.0, 21200.0] | output_count < 4000.0 | 2200.0000 | 🔴 CRITICAL |
 | batch_1017 | volume_anomaly | output_ratio | 0.1500 | [0.5, +inf] | output_ratio < 0.5 | 0.3500 | 🔴 CRITICAL |
-| batch_1018 | volume_anomaly | output_count | 2500.0000 | [4537.5, 20837.5] | output_count < 4537.5 | 2037.5000 | 🟠 WARNING |
+| batch_1018 | volume_anomaly | output_count | 2500.0000 | [4000.0, 21200.0] | output_count < 4000.0 | 1500.0000 | 🟠 WARNING |
 | batch_1018 | volume_anomaly | output_ratio | 0.1786 | [0.5, +inf] | output_ratio < 0.5 | 0.3214 | 🔴 CRITICAL |
-| batch_1019 | confidence_drift | avg_confidence | 0.4100 | [0.4688, 1.3232] | |x - mean| > 2.5σ | 0.4860 | 🟠 WARNING |
+| batch_1020 | confidence_drift | avg_confidence | 0.3900 | [0.451, 1.337] | \|x - mean\| > 2.5σ | 0.5040 | 🟠 WARNING |
 
 ---
 
